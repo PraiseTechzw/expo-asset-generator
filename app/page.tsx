@@ -20,6 +20,8 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
+import { Footer } from '@/components/footer';
+
 export default function Home() {
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -289,39 +291,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="py-12 border-t border-border/40 bg-card">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
-            <div className="col-span-2 space-y-4">
-              <div className="flex items-center gap-2">
-                <Zap className="h-6 w-6 text-primary" />
-                <span className="text-2xl font-black italic">ExpoAsset</span>
-              </div>
-              <p className="text-sm text-muted-foreground italic max-w-sm">
-                Built by developers for developers. We simplify the branding workflow so you can focus on building great features.
-              </p>
-            </div>
-            <div className="space-y-4">
-              <h5 className="font-bold text-sm uppercase italic tracking-widest">Resources</h5>
-              <ul className="space-y-2 text-sm text-muted-foreground italic">
-                <li><a href="#" className="hover:text-primary transition-colors">Documentation</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Expo Docs</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">EAS Build Guide</a></li>
-              </ul>
-            </div>
-            <div className="space-y-4">
-              <h5 className="font-bold text-sm uppercase italic tracking-widest">Legal</h5>
-              <ul className="space-y-2 text-sm text-muted-foreground italic">
-                <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-border/40 text-center text-xs text-muted-foreground italic">
-            © 2024 Expo Asset Generator. Not affiliated with Expo or 650 Industries. Built with Sharp & Next.js.
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

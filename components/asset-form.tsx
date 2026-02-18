@@ -22,7 +22,8 @@ import {
   Sparkles,
   Shield,
   FileText,
-  MousePointer2
+  MousePointer2,
+  Check
 } from 'lucide-react';
 
 interface AssetFormProps {
